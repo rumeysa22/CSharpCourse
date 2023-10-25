@@ -23,7 +23,13 @@ namespace TypesAndVariables
             Console.WriteLine("number2 is {0}", number2);
             Console.WriteLine("number3 is {0}", number3);
             Console.WriteLine("number4 is {0}", number4);
+            Console.WriteLine((int)Days.Wednesday);
+            Console.ReadLine();
             Console.WriteLine("Character is : {0}", (int)character);
         } 
+    }
+    enum Days
+    {
+        Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
     }
 }
