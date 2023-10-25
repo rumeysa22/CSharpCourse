@@ -17,7 +17,7 @@ namespace Methods
             //Add();
             //var result = Add2();
 
-            int number1 = 20;
+            int number1;
             int number2 = 100;
             var result2 = Add3( number1 , number2); //değer tipini referans tip olarak kullanmamızı sağlar bu sayede işlemlerin sonunda değeri değişecektir ref yazılmasaydı ne olursa olsun en baştaki değerine geri dönüyordu 
             
@@ -36,7 +36,7 @@ namespace Methods
             var result = number1 + number2;
             return result;
         }
-        static int Add3(ref int number1, int number2)
+        static int Add3(out int number1, int number2)
         {
             number1 = 30;
             return number1 + number2;
