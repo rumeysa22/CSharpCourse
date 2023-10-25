@@ -17,12 +17,16 @@ namespace Methods
             //Add();
             //var result = Add2();
 
-            int number1;
-            int number2 = 100;
-            var result2 = Add3( number1 , number2); //değer tipini referans tip olarak kullanmamızı sağlar bu sayede işlemlerin sonunda değeri değişecektir ref yazılmasaydı ne olursa olsun en baştaki değerine geri dönüyordu 
-            
-            Console.WriteLine(result2);
-            Console.WriteLine(number1);
+            //int number1;
+            //int number2 = 100;
+            //var result2 = Add3( number1 , number2); //değer tipini referans tip olarak kullanmamızı sağlar bu sayede işlemlerin sonunda değeri değişecektir ref yazılmasaydı ne olursa olsun en baştaki değerine geri dönüyordu 
+
+            //Console.WriteLine(result2);
+            //Console.WriteLine(number1);
+
+            Console.WriteLine(Multiply(2,4));
+            Console.WriteLine(Multiply(2,4,5));
+
             Console.ReadLine();
         }
 
@@ -40,6 +44,15 @@ namespace Methods
         {
             number1 = 30;
             return number1 + number2;
+        }
+
+        static int Multiply(int number1, int number2)
+        { 
+            return number1 * number2; 
+        }
+        static int Multiply(int number1, int number2, int number3)
+        {
+            return number1 * number2 * number3;
         }
     }
 }
