@@ -19,10 +19,15 @@ namespace TypesAndVariables
             double number5 = 10.4; //64bit
             string city = "Ankara";
             decimal number6 = 10.4m;
+            var number7 = 10;
+            number7 = 'A';
+            number7 = "A";
             Console.WriteLine("number1 is {0}", number1);
             Console.WriteLine("number2 is {0}", number2);
             Console.WriteLine("number3 is {0}", number3);
             Console.WriteLine("number4 is {0}", number4);
+            Console.WriteLine("number5 is {0}", number5);
+            Console.WriteLine("number7 is {0}", number7);
             Console.WriteLine((int)Days.Wednesday);
             Console.ReadLine();
             Console.WriteLine("Character is : {0}", (int)character);
