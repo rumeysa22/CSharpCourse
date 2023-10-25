@@ -19,6 +19,6 @@ namespace TypesAndVariables
             Console.WriteLine("number2 is {0}", number2);
             Console.WriteLine("number3 is {0}", number3);
             Console.WriteLine("number4 is {0}", number4);
-        }
+        } 
     }
 }
