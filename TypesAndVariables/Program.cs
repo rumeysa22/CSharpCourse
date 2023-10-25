@@ -26,6 +26,7 @@ namespace TypesAndVariables
             Console.WriteLine("Character is : {0}", (int)character);
             Console.WriteLine((int)Days.Wednesday);
             Console.ReadLine();
+
         }
     }
     enum Days
