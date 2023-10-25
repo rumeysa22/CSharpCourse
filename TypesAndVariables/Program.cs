@@ -17,6 +17,8 @@ namespace TypesAndVariables
             bool condition1 = false;
             char character = 'A';
             double number5 = 10.4; //64bit
+            string city = "Ankara";
+            decimal number6 = 10.4m;
             Console.WriteLine("number1 is {0}", number1);
             Console.WriteLine("number2 is {0}", number2);
             Console.WriteLine("number3 is {0}", number3);
