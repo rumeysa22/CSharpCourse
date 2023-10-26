@@ -10,12 +10,23 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            for(int i = 100;  i >= 0; i = i-2) 
+            int number = 100;
+            while (number >= 0)
+            {
+                Console.WriteLine(number);
+                number--;
+            }
+        
+            Console.ReadLine();
+        }
+
+        private static void  forLoop()
+        {
+            for (int i = 100; i >= 0; i = i - 2)
             {
                 Console.WriteLine(i);
             }
             Console.WriteLine("finished");
-            Console.ReadLine();
         }
     }
 }
