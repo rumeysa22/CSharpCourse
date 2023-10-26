@@ -10,15 +10,22 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            int number = 10;
-            do
-            {
-                Console.WriteLine(number);
-                number--;
-            }
+            //int number = 10;
+            //do
+            //{
+            //    Console.WriteLine(number);
+            //    number--;
+            //}
 
-            while (number >= 11);
+            //while (number >= 11);
+
+            string[] students = new string[3] { "rum", "ey", "sa" };
+            foreach (string student in students)
+            {
+                Console.WriteLine(student);
+            }
             Console.ReadLine();
+            
         }
 
         private static void  forLoop()
