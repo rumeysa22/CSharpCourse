@@ -10,13 +10,14 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            int number = 100;
-            while (number >= 0)
+            int number = 10;
+            do
             {
                 Console.WriteLine(number);
                 number--;
             }
-        
+
+            while (number >= 11);
             Console.ReadLine();
         }
 
