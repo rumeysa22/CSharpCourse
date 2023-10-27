@@ -8,49 +8,61 @@ namespace Interfaces
 {
     internal class Program
     {
-        static void Main(string[] args)
+        ICustomerDal[] customerDals = new ICustomerDal[2]
         {
-            PersonManager manager = new PersonManager();
-            Customer customer = new Customer
-            {
-                Id = 1,
-                FirstName = "rumeysa",
-                LastName = "akkaya",
-                Address = "istanbul"
-            };
-            manager.Add(customer);
-            manager.Add(student);
-            Console.ReadLine();
+            new SqlServerCustomerDal(),
+            new OracleCustomerDal()
+        };
+        
+        foreach (var customerDal in customerDals)
+        {
+            customerDal.Add();
         }
     }
 
-    interface IPerson //interfacelerde temel amaç ana bir nesne olurşturmaktır ,
+    static void Main(string[] args)
     {
-        int Id { get; set; }
-        string FirstName { get; set; }
-        string LastName { get; set; }
-    }
-
-    class Customer : IPerson
-    {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Address { get; set; }
-    }
-    class student : IPerson
-    {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Depatment { get; set; }
-    }
-    class PersonManager
-    {
-        public void Add(IPerson person)
+        PersonManager manager = new PersonManager();
+        Customer customer = new Customer
         {
-            Console.WriteLine(person.FirstName);
-        }
+            Id = 1,
+            FirstName = "rumeysa",
+            LastName = "akkaya",
+            Address = "istanbul"
+        };
+        manager.Add(customer);
+        manager.Add(student);
+        Console.ReadLine();
     }
+}
+
+interface IPerson //interfacelerde temel amaç ana bir nesne olurşturmaktır ,
+{
+    int Id { get; set; }
+    string FirstName { get; set; }
+    string LastName { get; set; }
+}
+
+class Customer : IPerson
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Address { get; set; }
+}
+class student : IPerson
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Depatment { get; set; }
+}
+class PersonManager
+{
+    public void Add(IPerson person)
+    {
+        Console.WriteLine(person.FirstName);
+    }
+}
 
 }
