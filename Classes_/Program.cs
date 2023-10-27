@@ -18,6 +18,19 @@ namespace Classes_
             productManager.Add();
             productManager.Update();
 
+            Customer customer = new Customer();
+            customer.City = "İstanbul";
+            customer.Id = 1;
+            customer.FirstName = "rumeysa";
+            customer.LastName = "akkaya";
+
+            Customer customer2 = new Customer()
+            {
+                Id = 2, City = "Ankara", FirstName = "rum", LastName = "Demiroğ"
+            };
+            Console.WriteLine(customer2.FirstName);
+
+
             Console.ReadLine();
         }
     }

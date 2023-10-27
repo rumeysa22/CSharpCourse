@@ -9,7 +9,6 @@ namespace Classes_
     internal class CustomerManager
     {
         class CustomerManager
-
         {
             public void Add()
             {
@@ -21,4 +20,5 @@ namespace Classes_
                 Console.WriteLine("Customer Update!");
             }
         }
+    }
 }
