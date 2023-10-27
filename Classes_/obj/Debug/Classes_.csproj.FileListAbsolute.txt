@@ -1,0 +1,2 @@
+C:\Users\rumey\source\repos\CSharpCourse\Classes_\obj\Debug\Classes_.csproj.AssemblyReference.cache
+C:\Users\rumey\source\repos\CSharpCourse\Classes_\obj\Debug\Classes_.csproj.CoreCompileInputs.cache
